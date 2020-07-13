@@ -6,7 +6,7 @@ const app = express()
 
 const schema = new GraphQLSchema({
   query: new GraphQLObjectType({
-    name: 'hello world',
+    name: 'HelloWorld',
     fields: () => ({
       message: { type: GraphQLString, resolve: () => 'Hello World' },
     }),
